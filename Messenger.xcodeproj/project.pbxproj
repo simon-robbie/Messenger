@@ -22,6 +22,15 @@
 		894B023E1862788900D106D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 894B021D1862788900D106D6 /* UIKit.framework */; };
 		894B02461862788900D106D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 894B02441862788900D106D6 /* InfoPlist.strings */; };
 		894B02481862788900D106D6 /* MessengerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 894B02471862788900D106D6 /* MessengerTests.m */; };
+		894B02591862A60300D106D6 /* S3Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 894B02581862A60300D106D6 /* S3Controller.m */; };
+		894B025C1862A78D00D106D6 /* MessageCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 894B025B1862A78D00D106D6 /* MessageCenter.m */; };
+		894B025F1862A8D700D106D6 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 894B025E1862A8D700D106D6 /* Message.m */; };
+		894B02621862AA3A00D106D6 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 894B02611862AA3A00D106D6 /* User.m */; };
+		894B02641862B12000D106D6 /* AWSRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 894B02631862B12000D106D6 /* AWSRuntime.framework */; };
+		894B02661862B12E00D106D6 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 894B02651862B12E00D106D6 /* AWSS3.framework */; };
+		894B02691862C78800D106D6 /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 894B02681862C78800D106D6 /* DateUtil.m */; };
+		894B026B1862CD3D00D106D6 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 894B026A1862CD3D00D106D6 /* MessageTableViewCell.xib */; };
+		894B026E1862CD5100D106D6 /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 894B026D1862CD5100D106D6 /* MessageTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +64,21 @@
 		894B02431862788900D106D6 /* MessengerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MessengerTests-Info.plist"; sourceTree = "<group>"; };
 		894B02451862788900D106D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		894B02471862788900D106D6 /* MessengerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessengerTests.m; sourceTree = "<group>"; };
+		894B02571862A60300D106D6 /* S3Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = S3Controller.h; sourceTree = "<group>"; };
+		894B02581862A60300D106D6 /* S3Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = S3Controller.m; sourceTree = "<group>"; };
+		894B025A1862A78D00D106D6 /* MessageCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCenter.h; sourceTree = "<group>"; };
+		894B025B1862A78D00D106D6 /* MessageCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCenter.m; sourceTree = "<group>"; };
+		894B025D1862A8D700D106D6 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		894B025E1862A8D700D106D6 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		894B02601862AA3A00D106D6 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		894B02611862AA3A00D106D6 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		894B02631862B12000D106D6 /* AWSRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSRuntime.framework; path = "../aws-ios-sdk-1.7.1/AWSRuntime.framework"; sourceTree = "<group>"; };
+		894B02651862B12E00D106D6 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = "../aws-ios-sdk-1.7.1/AWSS3.framework"; sourceTree = "<group>"; };
+		894B02671862C78800D106D6 /* DateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtil.h; sourceTree = "<group>"; };
+		894B02681862C78800D106D6 /* DateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
+		894B026A1862CD3D00D106D6 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		894B026C1862CD5100D106D6 /* MessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewCell.h; sourceTree = "<group>"; };
+		894B026D1862CD5100D106D6 /* MessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				894B02661862B12E00D106D6 /* AWSS3.framework in Frameworks */,
+				894B02641862B12000D106D6 /* AWSRuntime.framework in Frameworks */,
 				894B021C1862788900D106D6 /* CoreGraphics.framework in Frameworks */,
 				894B021E1862788900D106D6 /* UIKit.framework in Frameworks */,
 				894B021A1862788900D106D6 /* Foundation.framework in Frameworks */,
@@ -103,6 +129,8 @@
 		894B02181862788900D106D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				894B02651862B12E00D106D6 /* AWSS3.framework */,
+				894B02631862B12000D106D6 /* AWSRuntime.framework */,
 				894B02191862788900D106D6 /* Foundation.framework */,
 				894B021B1862788900D106D6 /* CoreGraphics.framework */,
 				894B021D1862788900D106D6 /* UIKit.framework */,
@@ -122,6 +150,19 @@
 				894B02321862788900D106D6 /* ViewController.m */,
 				894B02341862788900D106D6 /* Images.xcassets */,
 				894B02201862788900D106D6 /* Supporting Files */,
+				894B02571862A60300D106D6 /* S3Controller.h */,
+				894B02581862A60300D106D6 /* S3Controller.m */,
+				894B025A1862A78D00D106D6 /* MessageCenter.h */,
+				894B025B1862A78D00D106D6 /* MessageCenter.m */,
+				894B025D1862A8D700D106D6 /* Message.h */,
+				894B025E1862A8D700D106D6 /* Message.m */,
+				894B02601862AA3A00D106D6 /* User.h */,
+				894B02611862AA3A00D106D6 /* User.m */,
+				894B02671862C78800D106D6 /* DateUtil.h */,
+				894B02681862C78800D106D6 /* DateUtil.m */,
+				894B026C1862CD5100D106D6 /* MessageTableViewCell.h */,
+				894B026D1862CD5100D106D6 /* MessageTableViewCell.m */,
+				894B026A1862CD3D00D106D6 /* MessageTableViewCell.xib */,
 			);
 			path = Messenger;
 			sourceTree = "<group>";
@@ -233,6 +274,7 @@
 			files = (
 				894B02301862788900D106D6 /* Main_iPad.storyboard in Resources */,
 				894B02351862788900D106D6 /* Images.xcassets in Resources */,
+				894B026B1862CD3D00D106D6 /* MessageTableViewCell.xib in Resources */,
 				894B022D1862788900D106D6 /* Main_iPhone.storyboard in Resources */,
 				894B02241862788900D106D6 /* InfoPlist.strings in Resources */,
 			);
@@ -254,8 +296,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				894B02331862788900D106D6 /* ViewController.m in Sources */,
+				894B02691862C78800D106D6 /* DateUtil.m in Sources */,
+				894B026E1862CD5100D106D6 /* MessageTableViewCell.m in Sources */,
+				894B02621862AA3A00D106D6 /* User.m in Sources */,
+				894B025F1862A8D700D106D6 /* Message.m in Sources */,
 				894B022A1862788900D106D6 /* AppDelegate.m in Sources */,
 				894B02261862788900D106D6 /* main.m in Sources */,
+				894B02591862A60300D106D6 /* S3Controller.m in Sources */,
+				894B025C1862A78D00D106D6 /* MessageCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +440,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/srobbie/Documents/aws-ios-sdk-1.7.1",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Messenger/Messenger-Prefix.pch";
 				INFOPLIST_FILE = "Messenger/Messenger-Info.plist";
@@ -405,6 +457,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/srobbie/Documents/aws-ios-sdk-1.7.1",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Messenger/Messenger-Prefix.pch";
 				INFOPLIST_FILE = "Messenger/Messenger-Info.plist";

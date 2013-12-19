@@ -1,18 +1,118 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gu6-dl-N3v"/>
+                        <viewControllerLayoutGuide type="bottom" id="3S4-on-cpe"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOo-ic-e8R">
+                                <rect key="frame" x="260" y="53" width="40" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSendButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pfu-sq-SRk"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tdA-fh-jo7">
+                                <rect key="frame" x="68" y="20" width="173" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Alice"/>
+                                    <segment title="Bob"/>
+                                    <segment title="Charlie"/>
+                                </segments>
+                                <connections>
+                                    <action selector="fromValueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="9fj-kt-J3y"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="MBe-6Q-nzc">
+                                <rect key="frame" x="68" y="56" width="173" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Alice"/>
+                                    <segment title="Bob"/>
+                                    <segment title="Charlie"/>
+                                </segments>
+                                <connections>
+                                    <action selector="toValueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="hCR-EC-g56"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2d-kw-hFG">
+                                <rect key="frame" x="20" y="22" width="40" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0O-et-iNq">
+                                <rect key="frame" x="42" y="63" width="18" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEb-RH-xeP">
+                                <rect key="frame" x="20" y="92" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ils-FA-pLX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JDd-Cq-prg">
+                                <rect key="frame" x="20" y="130" width="280" height="213"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="bjb-63-stn"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="6o9-UH-9XH"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TOo-ic-e8R" secondAttribute="trailing" constant="20" id="03Y-P5-zrV"/>
+                            <constraint firstItem="nEb-RH-xeP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="0Th-Px-5ut"/>
+                            <constraint firstItem="MBe-6Q-nzc" firstAttribute="top" secondItem="tdA-fh-jo7" secondAttribute="bottom" constant="8" symbolic="YES" id="2VA-NG-SOd"/>
+                            <constraint firstItem="nEb-RH-xeP" firstAttribute="top" secondItem="MBe-6Q-nzc" secondAttribute="bottom" constant="8" symbolic="YES" id="2XD-aH-EzQ"/>
+                            <constraint firstItem="3S4-on-cpe" firstAttribute="top" secondItem="JDd-Cq-prg" secondAttribute="bottom" constant="225" id="9Fy-4L-VIx"/>
+                            <constraint firstItem="JDd-Cq-prg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="EjU-jU-Q9r"/>
+                            <constraint firstItem="k2d-kw-hFG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="HHt-T6-j3D"/>
+                            <constraint firstItem="tdA-fh-jo7" firstAttribute="leading" secondItem="MBe-6Q-nzc" secondAttribute="leading" id="KyJ-Oj-fgm"/>
+                            <constraint firstItem="tdA-fh-jo7" firstAttribute="baseline" secondItem="k2d-kw-hFG" secondAttribute="baseline" id="T3W-X9-aQX"/>
+                            <constraint firstAttribute="trailing" secondItem="JDd-Cq-prg" secondAttribute="trailing" constant="20" symbolic="YES" id="TYp-eT-Ccu"/>
+                            <constraint firstItem="tdA-fh-jo7" firstAttribute="leading" secondItem="k2d-kw-hFG" secondAttribute="trailing" constant="8" id="Z7f-6t-fAU"/>
+                            <constraint firstItem="W0O-et-iNq" firstAttribute="baseline" secondItem="MBe-6Q-nzc" secondAttribute="baseline" constant="5" id="b8R-5S-6K9"/>
+                            <constraint firstItem="MBe-6Q-nzc" firstAttribute="baseline" secondItem="TOo-ic-e8R" secondAttribute="baseline" constant="-1" id="bFh-Nq-IoT"/>
+                            <constraint firstItem="JDd-Cq-prg" firstAttribute="top" secondItem="nEb-RH-xeP" secondAttribute="bottom" constant="8" symbolic="YES" id="s39-lZ-8fU"/>
+                            <constraint firstAttribute="trailing" secondItem="nEb-RH-xeP" secondAttribute="trailing" constant="20" symbolic="YES" id="vFM-NR-htl"/>
+                            <constraint firstItem="MBe-6Q-nzc" firstAttribute="leading" secondItem="W0O-et-iNq" secondAttribute="trailing" constant="8" id="yAI-if-07L"/>
+                            <constraint firstItem="k2d-kw-hFG" firstAttribute="top" secondItem="gu6-dl-N3v" secondAttribute="bottom" constant="2" id="ywq-ag-cWK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fromSegmentedControl" destination="tdA-fh-jo7" id="fwd-K1-1AS"/>
+                        <outlet property="sendButton" destination="TOo-ic-e8R" id="6Un-U3-W7L"/>
+                        <outlet property="sendView" destination="nEb-RH-xeP" id="YIw-F0-wAu"/>
+                        <outlet property="tableView" destination="JDd-Cq-prg" id="qcD-SF-x9S"/>
+                        <outlet property="toSegmentedControl" destination="MBe-6Q-nzc" id="hbx-VQ-9gJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
